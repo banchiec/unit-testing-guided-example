@@ -1,13 +1,29 @@
 function sum(a, b) {
-  return;
+  if (a === undefined && b === undefined) {
+    return 0;
+  }
+  if (b === undefined) {
+    return a;
+  }
+  return a + b;
 }
 
 function subtract(a, b) {
-  return;
+  if (a === undefined && b === undefined) {
+    return 0;
+  }
+  if (b === undefined) {
+    return a;
+  }
+  return a - b;
 }
 
 function divide(a, b) {
-  return;
+
+  if (b === 0) {
+    throw new Error('An explanatory error message');
+  }
+  return a / b;
 }
 
 function multiply(a, b) {
